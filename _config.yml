@@ -1,0 +1,46 @@
+﻿# Dependencies
+markdown:         rdiscount
+highlighter:      rouge
+#语法高亮插件
+
+# Permalinks
+permalink:        pretty
+
+# Server
+source:           ./
+#源码地址，./是相对于当前目录的根目录
+destination:      ./_site                                  
+#生成网页地址
+host:             0.0.0.0                                  
+#localhost的话，本地不能用ip，所以还是设置0.0.0.0
+port:             9001
+baseurl:          http://teamwingui.github.io/teamwingui.github.com
+BASE_PATH: http://teamwingui.github.io/
+#主要是本地测试用，baseurl是项目名字，这样取名，主要是跟线上访问地址：username.github.io/project-name/，保持一致，同时本地资源，
+#要在路径前加上{{ site.baseurl}}/path/to/css.css，如果不使用baseurl则 添加一个 “/”
+#tw bootstrap模版是源码在根目录，生成文件在子目录，没有使用baseurl
+#设置baseurl后，本地运行命令：jekyll serve --baseurl ''  引号内可以设置别名，192.168.88.117:9001/haha 
+url:              http://teamwingui.github.io/teamwingui.github.com
+encoding:         UTF-8
+
+exclude:
+  - "jade"
+  - "vendor"
+
+# Custom vars
+current_version:  3.1.1
+repo:             https://github.com/twbs/bootstrap
+sass_repo:        https://github.com/twbs/bootstrap-sass
+
+download:
+  source:         https://github.com/twbs/bootstrap/archive/v3.1.1.zip
+  dist:           https://github.com/twbs/bootstrap/releases/download/v3.1.1/bootstrap-3.1.1-dist.zip
+  sass:           https://github.com/twbs/bootstrap-sass/archive/v3.1.1.tar.gz
+
+blog:             http://blog.getbootstrap.com
+expo:             http://expo.getbootstrap.com
+
+cdn:
+  css:            //netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css
+  css_theme:      //netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css
+  js:             //netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js
