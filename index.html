@@ -1,53 +1,55 @@
 ---
 layout: home
-title: Bootstrap
+title: 佛山天翼科技前端ui框架-TWUI
 ---
 
 <main class="bs-docs-masthead" id="content" role="main">
   <div class="container">
-    <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">B</span>
-    <!-- <h1>Bootstrap</h1> -->
-    <p class="lead">测试中文The most popular front-end framework for developing responsive, mobile first projects on the web.</p>
+    <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">T</span>
+    <p class="lead">TWUI 是最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目。</p>
     <p class="lead">
-      <a href="getting-started#download" class="btn btn-outline-inverse btn-lg" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download {{ site.current_version }}']);">Download Bootstrap</a>
+      <a href="getting-started#download" class="btn btn-outline-inverse btn-lg" onclick="ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{ site.current_version }}');">下载TWUI</a>
     </p>
-    <p class="version">Currently v{{ site.current_version }}</p>
-    {% include ads.html %}
+    <p class="version">当前版本 v{{ site.current_version }} | {{ site.updata_time }}更新</p>
+   <!-- {% include ads.html %}-->
+   <!--广告模版-->
   </div>
 </main>
 
 <div class="bs-docs-featurette">
   <div class="container">
-    <h2 class="bs-docs-featurette-title">Designed for everyone, everywhere.</h2>
-    <p class="lead">Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>
+    <h2 class="bs-docs-featurette-title">为所有开发者、所有应用场景而设计</h2>
+    <p class="lead">TWUI 让前端开发更快速、简单。所有开发者都能快速上手、所有设备都可以适配、所有项目都适用。</p>
 
     <hr class="half-rule">
 
     <div class="row">
       <div class="col-sm-4">
         <img src="assets/img/sass-less.png" alt="Sass and Less support" class="img-responsive">
-        <h3>Preprocessors</h3>
-        <p>In addition to vanilla CSS, Bootstrap includes support for the two most popular CSS preprocessors, <a href="../css/#less">Less</a> and <a href="../css/#sass">Sass</a>.</p>
+        <h3>预处理器</h3>
+        <p>虽然可以直接使用 Bootstrap 提供的 CSS 样式表，不要忘记 Bootstrap 的源码是基于最流行的 CSS 预处理器 <a href="../css/#less">Less</a> 和 <a href="../css/#sass">Sass</a>. 你可以采用预编译的 CSS 文件快速开发，也可以从源码定制自己需要的样式。</p>
       </div>
       <div class="col-sm-4">
         <img src="assets/img/devices.png" alt="Responsive across devices" class="img-responsive">
-        <h3>One framework, every device.</h3>
-        <p>Bootstrap easily and efficiently scales your project with one code base, from phones to tablets to desktops.</p>
+        <h3>一个框架、多种设备</h3>
+        <p>通过使用CSS 媒体查询（Media Query），你的网站和应用能在 TWUI 的帮助下通过同一份代码快速、有效适配手机、平板、PC 设备。</p>
       </div>
       <div class="col-sm-4">
         <img src="assets/img/components.png" alt="Components" class="img-responsive">
-        <h3>Comprehensive docs</h3>
-        <p>With Bootstrap, you get extensive and beautiful documentation with hundreds of live examples, code snippets, and more.</p>
+        <h3>完整的特性</h3>
+        <p>TWUI 提供了全面、美观的文档。你能在这里找到关于 HTML 元素、HTML 和 CSS 组件、jQuery 插件方面的所有详细文档。</p>
       </div>
     </div>
 
     <hr class="half-rule">
 
-    <p class="lead">Bootstrap is open source. It's hosted, developed, and maintained on GitHub.</p>
-    <a href="{{ site.repo }}" class="btn btn-outline btn-lg">View the GitHub project</a>
+    <p class="lead">TWUI 是完全开源的。它的代码托管、开发、维护都依赖 GitHub 平台。</p>
+    <a href="{{ site.repo }}" class="btn btn-outline btn-lg">查看 GitHub 项目</a>
   </div>
 </div>
 
+<!--jekyll的数据格式使用例子，在文件夹_data，支持yml和json格式，下面修改为json格式，sjson是文件名字，全名是sjson.json -->
+<!--
 <div class="bs-docs-featurette">
   <div class="container">
     <h2 class="bs-docs-featurette-title">Built with Bootstrap.</h2>
@@ -56,10 +58,10 @@ title: Bootstrap
     <hr class="half-rule">
 
     <div class="row bs-docs-featured-sites">
-    {% for showcase in site.data.showcase %}
+    {% for showcase in site.data.sjson %}
       <div class="col-sm-3">
         <a href="{{ showcase.expo_url }}" target="_blank" title="{{ showcase.name }}">
-          <img src="{{ showcase.img }}" alt="{{ showcase.name }}" class="img-responsive">
+          <img src="http://expo.getbootstrap.com/screenshots/{{ showcase.img }}.jpg" alt="{{ showcase.name }}" class="img-responsive">
         </a>
       </div>
     {% endfor %}
@@ -71,3 +73,4 @@ title: Bootstrap
     <a href="{{ site.expo }}" class="btn btn-outline btn-lg">Explore the Expo</a>
   </div>
 </div>
+-->
